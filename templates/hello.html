@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>SmartNinja basic Jinja template</title>
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    {% if sporocilo  %}
+        <h1>vaše sporocilo je: {{ sporocilo }}</h1>
+    {% else %}
+        <h1>Ni sporocila</h1>
+    {% endif %}
+
+    {% if posiljatelj %}
+        <h3>{{ posiljatelj }}</h3>
+    {% else %}
+        <h3>Kdo si?</h3>
+    {% endif %}
+
+    <p>{{ kam_gremo }}</p>
+
+
+
+</body>
+</html>
